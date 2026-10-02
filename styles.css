@@ -25,3 +25,32 @@ section#about .eyebrow{
   letter-spacing:.16em;
   font-weight:900;
 }
+
+/* FINAL OVERRIDE: larger header logo and red headings */
+body header .logo {
+  width: 380px !important;
+  height: 150px !important;
+  display: block !important;
+  flex: 0 0 380px !important;
+}
+body header .logo img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  object-fit: contain !important;
+  object-position: left center !important;
+}
+body .hero .eyebrow,
+body section#about .eyebrow {
+  font-size: 1.5rem !important;
+  line-height: 1.2 !important;
+  letter-spacing: .16em !important;
+  font-weight: 900 !important;
+}
+@media (max-width:800px) {
+  body header .logo {
+    width: 260px !important;
+    height: 105px !important;
+    flex-basis: 260px !important;
+  }
+}
