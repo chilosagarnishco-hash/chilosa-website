@@ -215,3 +215,24 @@ footer{
   .section-kicker{align-items:flex-start}
   .section-kicker img{width:130px;height:64px}
 }
+
+/* Green chile hero background */
+.hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, rgba(250,246,232,.18) 0%, rgba(250,246,232,.78) 48%, rgba(250,246,232,.96) 70%),
+    url("images/fresh-green-chiles.jpg") left center / 58% 100% no-repeat;
+}
+.hero-photo {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+@media (max-width:800px) {
+  .hero {
+    background:
+      linear-gradient(rgba(250,246,232,.35), rgba(250,246,232,.92)),
+      url("images/fresh-green-chiles.jpg") center / cover no-repeat;
+  }
+}
