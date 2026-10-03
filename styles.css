@@ -83,7 +83,7 @@ section{padding:90px 6vw}
 .contact{text-align:center;background:var(--sand)}.contact h2{max-width:950px;margin:10px auto}.contact>p{max-width:760px;margin:20px auto;line-height:1.6}
 .social-links{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:30px}.social-links a{padding:12px 15px;background:var(--verde-deep);color:white;text-decoration:none;font-weight:900}
 .social-links a:hover{background:var(--chile-red)}
-footer{background:var(--verde-deep);color:white;text-align:center;padding:40px 20px}footer img{width:210px;max-width:80%;filter:brightness(0) invert(1);margin-bottom:15px}footer p{margin:0;color:#ddd}
+footer{background:var(--verde-deep);color:white;text-align:center;padding:40px 20px}footer img{width:230px;max-width:80%;height:auto;display:block;margin:0 auto 15px;filter:none}footer p{margin:0;color:#ddd}
 
 @media(max-width:1050px){
   .site-header{gap:16px}.site-header nav{gap:14px}
