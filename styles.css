@@ -208,135 +208,96 @@ p{
   border:2px solid var(--green);
 }
 
-/* PERSONALITY — VISUAL TREATMENT ONLY */
+/* PERSONALITY — SHORTER, IMAGE-FIRST TREATMENT */
 .personality-section{
   position:relative;
-  min-height:700px;
+  min-height:540px;
+  height:540px;
   padding:0;
-  display:flex;
-  align-items:stretch;
   overflow:hidden;
   isolation:isolate;
   color:#fff;
   background:#151515 url("images/chilosa-personality-hero.png") center center / cover no-repeat;
 }
 
-/* The image stays visible: darker on the copy side, lighter toward the products. */
+/* Keep the photograph visible, including Chilosa, while giving the copy a readable veil. */
 .personality-overlay{
   width:100%;
-  min-height:700px;
+  height:100%;
   display:flex;
   align-items:center;
   background:
     linear-gradient(90deg,
-      rgba(8,16,8,.91) 0%,
-      rgba(8,16,8,.82) 30%,
-      rgba(8,16,8,.60) 47%,
-      rgba(8,16,8,.24) 67%,
-      rgba(8,16,8,.05) 100%);
+      rgba(8,16,8,.76) 0%,
+      rgba(8,16,8,.62) 31%,
+      rgba(8,16,8,.34) 52%,
+      rgba(8,16,8,.10) 76%,
+      rgba(8,16,8,.02) 100%);
 }
 
 .personality-content{
-  width:min(690px,92%);
+  width:min(650px,86%);
   margin-left:clamp(24px,7vw,110px);
-  padding:76px 0;
-}
-
-.personality-kicker{
-  margin:0 0 14px;
-  color:var(--yellow);
-  font-weight:900;
-  letter-spacing:.17em;
-  font-size:.92rem;
-  text-shadow:0 2px 12px rgba(0,0,0,.45);
+  padding:30px 0;
+  position:relative;
+  z-index:2;
 }
 
 .personality-content h2{
-  position:relative;
   display:inline;
-  color:#fff;
-  font-size:clamp(2.5rem,5.2vw,4.9rem);
-  line-height:.97;
-  letter-spacing:-.04em;
   margin:0;
-  padding:5px 10px 7px 0;
-  background:linear-gradient(
-    90deg,
-    rgba(8,16,8,.58) 0%,
-    rgba(8,16,8,.30) 72%,
-    rgba(8,16,8,0) 100%
-  );
+  padding:5px 12px 7px 4px;
+  color:#fff;
+  font-size:clamp(2.25rem,4.5vw,4.25rem);
+  line-height:1.02;
+  letter-spacing:-.04em;
+  text-shadow:0 3px 16px rgba(0,0,0,.65);
+  background:rgba(8,16,8,.30);
   box-decoration-break:clone;
   -webkit-box-decoration-break:clone;
-  text-shadow:0 3px 18px rgba(0,0,0,.42);
-}
-
-.personality-lead{
-  max-width:620px;
-  margin:25px 0 27px;
-  padding:13px 18px;
-  color:rgba(255,255,255,.96);
-  font-size:1.16rem;
-  line-height:1.58;
-  background:rgba(8,16,8,.34);
-  border-left:4px solid var(--orange);
-  backdrop-filter:blur(3px);
-  text-shadow:0 2px 10px rgba(0,0,0,.4);
 }
 
 .personality-clues{
-  max-width:650px;
+  max-width:610px;
+  margin:25px 0 23px;
   display:grid;
-  gap:11px;
+  gap:9px;
 }
 
-.clue{
-  padding:12px 17px;
-  border-left:3px solid var(--red);
-  background:rgba(0,0,0,.30);
-  backdrop-filter:blur(3px);
-  box-shadow:0 4px 16px rgba(0,0,0,.10);
-}
-
-.clue h3{
+.personality-clues h3{
   margin:0;
+  padding:8px 13px;
   color:#fff;
   font-size:1.05rem;
-  line-height:1.4;
-  text-shadow:0 2px 10px rgba(0,0,0,.45);
-}
-
-.personality-close{
-  max-width:590px;
-  margin:24px 0 22px;
-  color:rgba(255,255,255,.90);
-  font-weight:700;
-  font-size:1.02rem;
-  text-shadow:0 2px 10px rgba(0,0,0,.45);
+  line-height:1.35;
+  font-weight:800;
+  background:rgba(8,16,8,.34);
+  border-left:3px solid var(--red);
+  text-shadow:0 2px 10px rgba(0,0,0,.55);
+  backdrop-filter:blur(2px);
 }
 
 .personality-button{
   display:inline-block;
-  min-height:46px;
-  padding:13px 22px;
+  min-height:44px;
+  padding:11px 21px;
   border-radius:999px;
   background:var(--red);
   color:#fff;
   text-decoration:none;
   font-weight:900;
-  box-shadow:0 8px 24px rgba(0,0,0,.25);
+  box-shadow:0 7px 20px rgba(0,0,0,.28);
   transition:.2s ease;
 }
 
 .personality-button:hover{
   transform:translateY(-2px);
-  filter:brightness(1.06);
 }
 
 @media (max-width:900px){
-  .personality-section,
-  .personality-overlay{
-    min-height:680px;
+  .personality-section{
+    min-height:500px;
+    height:500px;
   }
 
   .personality-content{
@@ -346,61 +307,62 @@ p{
 
 @media (max-width:600px){
   .personality-section{
-    min-height:0;
-    background-position:center top;
+    min-height:520px;
+    height:520px;
+    background-position:center center;
   }
 
   .personality-overlay{
-    min-height:0;
-    align-items:flex-end;
+    align-items:center;
     background:
       linear-gradient(180deg,
-        rgba(8,16,8,.07) 0%,
-        rgba(8,16,8,.25) 24%,
-        rgba(8,16,8,.68) 53%,
-        rgba(8,16,8,.96) 82%,
-        rgba(8,16,8,.99) 100%);
+        rgba(8,16,8,.08) 0%,
+        rgba(8,16,8,.20) 30%,
+        rgba(8,16,8,.60) 66%,
+        rgba(8,16,8,.88) 100%);
   }
 
   .personality-content{
-    width:min(91%,560px);
+    width:90%;
     margin:0 auto;
-    padding:45px 0 49px;
-  }
-
-  .personality-kicker{
-    font-size:.72rem;
-    letter-spacing:.11em;
+    padding:25px 0;
   }
 
   .personality-content h2{
-    font-size:clamp(2.1rem,10.5vw,3.2rem);
-    line-height:.99;
-    padding-right:5px;
+    font-size:clamp(2rem,9.8vw,3rem);
+    line-height:1.02;
+    padding:4px 8px 6px 2px;
   }
 
-  .personality-lead{
-    font-size:1rem;
-    line-height:1.5;
-    padding:12px 14px;
+  .personality-clues{
+    margin:20px 0;
+    gap:7px;
   }
 
-  .clue{
-    padding:12px 14px;
-  }
-
-  .clue h3{
-    font-size:1rem;
-  }
-
-  .personality-close{
+  .personality-clues h3{
+    padding:7px 10px;
     font-size:.96rem;
-    line-height:1.45;
+    line-height:1.3;
   }
 
   .personality-button{
-    width:100%;
+    width:auto;
     text-align:center;
+  }
+}
+
+@media (max-width:380px){
+  .personality-section{
+    min-height:500px;
+    height:500px;
+  }
+
+  .personality-content h2{
+    font-size:1.85rem;
+  }
+
+  .personality-clues h3{
+    font-size:.9rem;
   }
 }
 
