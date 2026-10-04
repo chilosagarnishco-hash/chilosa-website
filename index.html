@@ -1,61 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Chilosa Garnish Co. — bold New Mexico flavor with a little attitude.">
-<title>Chilosa Garnish Co. | The Secret Is Green</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Chilosa Garnish Co. — bold Mexican seasoning with New Mexico attitude.">
+<title>Chilosa Garnish Co. | The Grass Isn't Always Greener</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body id="top">
 <header class="site-header">
-  <a class="brand" href="#top"><img src="images/chilosa-logo.svg" alt="Chilosa Garnish Co."></a>
-  <nav>
+  <a class="brand" href="#top" aria-label="Chilosa Garnish Co. home"><img src="images/chilosa-logo.svg" alt="Chilosa Garnish Co."></a>
+  <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+  <nav id="main-nav" class="main-nav">
     <a href="#secret">The Secret</a><a href="#flavors">The Lineup</a><a href="#gifts">Gift Packs</a><a href="#story">Our Story</a><a href="#contact">Find Us</a>
   </nav>
-  <div class="social-mini"><a href="https://www.instagram.com/chilosagarnish">IG</a><a href="https://www.tiktok.com/@chilosagarnish">TT</a><a href="https://www.facebook.com/ChilosaGarnish">FB</a></div>
 </header>
-
 <main>
-<section class="hero">
-  <img class="hero-art" src="images/chilosa-secret-hero.png" alt="Chilosa Garnish Co. bottles and green Chilosa girl">
-  <div class="hero-copy">
-    <span class="eyebrow">NEW MEXICO • SOUTHWEST • BOLD FLAVOR</span>
-    <h1>PSSST...<br><span>THE CHILOSA<br>SECRET.</span></h1>
-    <p class="hero-sub">You’re not supposed to like it <strong>THIS MUCH.</strong></p>
-    <div class="hero-actions"><a class="btn btn-red" href="#flavors">Discover the Lineup</a><a class="btn btn-dark" href="#secret">What’s the Secret?</a></div>
+<section class="hero" aria-label="Chilosa Garnish Co. introduction">
+  <img class="hero-image" src="images/chilosa-mystery-hero.jpg" alt="Chilosa Garnish Co. mystery hero featuring the Chilosa brand and product bottles">
+  <div class="hero-overlay">
+    <p class="eyebrow">NEW MEXICO • SOUTHWEST • BOLD FLAVOR</p>
+    <h1>The grass isn't<br>always greener.</h1>
+    <p class="hero-punch">But your <em>Mexican seasoning blend</em> can be.</p>
+    <a class="btn btn-red" href="#flavors">Taste the Difference</a>
   </div>
 </section>
-
 <section class="secret-section" id="secret">
   <div class="secret-card">
-    <div class="stamp">KEEP<br>IT<br>GREEN</div>
-    <div><p class="kicker">THE GRASS IS ALWAYS GREENER</p>
-      <h2>Until you taste what’s on the other side.</h2>
-      <p>There’s the seasoning you already know. Then there’s the one people quietly ask about after they try it. Chilosa lives on that side of the fence — bold green chile, citrus, salt and Southwest attitude made for rims, snacks, food and cocktails.</p>
-      <p class="whisper">The secret? We’re not telling everything.</p>
-    </div>
+    <p class="kicker">THE CHILOSA SPIRIT</p>
+    <h2>There’s always another side of the fence.</h2>
+    <p>Chilosa brings bold Mexican-inspired seasoning, chile, citrus and Southwest attitude to the rim, the plate and everything in between.</p>
+    <p class="whisper">The best part? You don't have to wonder what's better. Taste it.</p>
   </div>
 </section>
-
 <section class="lineup" id="flavors">
-  <div class="section-heading"><p class="kicker">THE LINEUP</p><h2>Pick your temptation.</h2><p>Three bottles. Three personalities. One very green problem.</p></div>
+  <div class="section-heading"><p class="kicker">THE LINEUP</p><h2>Pick your flavor.</h2><p>Three Chilosa bottles. Three ways to bring a little more attitude to the table.</p></div>
   <div class="products">
-    <article class="product-card"><div class="product-image"><img src="images/mild-mama.jpg" alt="Chilosa Mild Mama bottle"></div><span class="heat">MILD</span><h3>Mild Mama</h3><p>Bright, savory green chile flavor with a balanced citrus finish.</p><a href="#contact">I Want Mild Mama →</a></article>
-    <article class="product-card featured"><div class="product-image"><img src="images/hot-mama.jpg" alt="Chilosa Hot Mama bottle"></div><span class="heat">HOT</span><h3>Hot Mama</h3><p>A bolder green chile kick for people who like their garnish with attitude.</p><a href="#contact">Bring the Heat →</a></article>
-    <article class="product-card"><div class="product-image"><img src="images/christmas-day.jpg" alt="Chilosa Christmas Day bottle"></div><span class="heat">SPECIAL</span><h3>Christmas Day</h3><p>A Southwest holiday-inspired chile blend made for gifting and gathering.</p><a href="#contact">Find Christmas Day →</a></article>
+    <article class="product-card"><div class="product-image"><img src="images/mild-mama.jpg" alt="Chilosa Mild Mama bottle"></div><span class="tag">MILD</span><h3>Mild Mama</h3><p>Bright, savory chile flavor with a balanced citrus finish.</p></article>
+    <article class="product-card featured"><div class="product-image"><img src="images/hot-mama.jpg" alt="Chilosa Hot Mama bottle"></div><span class="tag">HOT</span><h3>Hot Mama</h3><p>A bolder kick for people who like their seasoning with attitude.</p></article>
+    <article class="product-card"><div class="product-image"><img src="images/christmas-day.jpg" alt="Chilosa Christmas Day bottle"></div><span class="tag">SPECIAL</span><h3>Christmas Day</h3><p>A Southwest holiday-inspired blend made for gifting and gathering.</p></article>
   </div>
 </section>
-
-<section class="mystery-band"><div><span class="kicker">MORE CHILOSA</span><h2>Some things taste better when you’re in on the secret.</h2><p>Follow along for limited drops, market appearances, recipes and the occasional clue.</p></div><a class="btn btn-yellow" href="https://www.instagram.com/chilosagarnish">Follow the Clues</a></section>
-
-<section class="gifts" id="gifts"><div><p class="kicker">GIFT PACKS</p><h2>Give them all three.<br>Let them choose their favorite.</h2><p>Perfect for Christmas, host gifts, market finds and anyone who thinks ordinary seasoning is a little boring.</p><a class="btn btn-dark" href="#contact">Ask About Gift Packs</a></div><div class="gift-note"><span>3 FLAVORS.</span><span>1 PROBLEM.</span><strong>YOU’LL WANT<br>ALL THREE.</strong></div></section>
-
-<section class="story" id="story"><div><p class="kicker">THE CHILOSA SPIRIT</p><h2>Southwest flavor.<br>Modern attitude.</h2></div><p>Chilosa Garnish Co. brings bold green chile flavor to the rim, the plate and everything in between. It’s New Mexico-inspired, playful, a little mysterious and unapologetically fun.</p></section>
-
-<section class="contact" id="contact"><p class="kicker">CONTACT</p><h2>Ready to find out what everyone is whispering about?</h2><p>Follow Chilosa Garnish Co. for products, markets, recipes, gift packs and new flavors.</p><div class="social-links"><a href="https://www.instagram.com/chilosagarnish">Instagram @chilosagarnish</a><a href="https://www.tiktok.com/@chilosagarnish">TikTok @chilosagarnish</a><a href="https://www.facebook.com/ChilosaGarnish">Facebook: Chilosa Garnish</a></div></section>
+<section class="mystery-band"><div><p class="kicker">MORE CHILOSA</p><h2>Some flavors are worth discovering.</h2><p>Follow Chilosa for markets, recipes, gift packs, new flavors and a few surprises.</p></div><a class="btn btn-yellow" href="https://www.instagram.com/chilosagarnish">Follow Chilosa</a></section>
+<section class="gifts" id="gifts"><div><p class="kicker">GIFT PACKS</p><h2>Give them all three.</h2><p>Perfect for Christmas, host gifts, market finds and anyone ready to move beyond ordinary seasoning.</p><a class="btn btn-dark" href="#contact">Ask About Gift Packs</a></div><div class="gift-note"><span>3 FLAVORS.</span><span>1 ATTITUDE.</span><strong>ALL<br>CHILOSA.</strong></div></section>
+<section class="story" id="story"><div><p class="kicker">OUR STORY</p><h2>Mexican-inspired flavor.<br>New Mexico attitude.</h2></div><p>Chilosa Garnish Co. is made for people who want their food, drinks and gatherings to have a little more personality. Bold flavor, playful energy and a Southwest point of view.</p></section>
+<section class="contact" id="contact"><p class="kicker">FIND CHILOSA</p><h2>Ready to taste what's greener?</h2><p>Follow Chilosa Garnish Co. for products, markets, recipes, gift packs and new flavors.</p><div class="social-links"><a href="https://www.instagram.com/chilosagarnish">Instagram @chilosagarnish</a><a href="https://www.tiktok.com/@chilosagarnish">TikTok @chilosagarnish</a><a href="https://www.facebook.com/ChilosaGarnish">Facebook: Chilosa Garnish</a></div></section>
 </main>
-
-<footer><img src="images/chilosa-footer-logo.svg" alt="Chilosa Garnish Co. logo"><p>© 2026 Chilosa Garnish Co. • New Mexico • Southwest • Bold Flavor</p></footer>
-</body>
-</html>
+<footer><img src="images/chilosa-logo.svg" alt="Chilosa Garnish Co."><p>© 2026 Chilosa Garnish Co. • New Mexico • Southwest • Bold Flavor</p></footer>
+<script>const b=document.querySelector('.menu-toggle'),n=document.querySelector('#main-nav');b.addEventListener('click',()=>{const open=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!open));n.classList.toggle('open',!open)});n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{b.setAttribute('aria-expanded','false');n.classList.remove('open')}));</script>
+</body></html>
