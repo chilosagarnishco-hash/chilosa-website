@@ -217,7 +217,7 @@ p{
   overflow:hidden;
   isolation:isolate;
   color:#fff;
-  background:#151515 url("images/chilosa-personality-hero.png") center center / cover no-repeat;
+  background:#151515 url("images/chilosa-personality-hero.png") center center / contain no-repeat;
 }
 
 /* Keep the whole photograph visible. The lower gradient gives the text contrast
@@ -328,6 +328,8 @@ p{
     min-height:540px;
     height:540px;
     background-position:center center;
+    background-size:contain;
+    background-repeat:no-repeat;
   }
 
   .personality-overlay{
