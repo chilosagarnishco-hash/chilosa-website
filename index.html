@@ -1,55 +1,160 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Chilosa Garnish Co.</title><link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#173f35">
+<title>Chilosa Garnish Co.</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
 <header>
-  <a class="logo" href="#top"><img src="images/chilosa-logo-header.png" alt="Chilosa Garnish Company logo"></a>
-  <nav><a href="#about">About</a><a href="#flavors">Flavors</a><a href="#garnishes">Garnishes</a><a href="#contact">Contact</a></nav>
+  <a class="logo" href="#top">
+    <img src="images/chilosa-logo-header.png" alt="Chilosa Garnish Company logo">
+  </a>
+  <nav aria-label="Main navigation">
+    <a href="#about">About</a>
+    <a href="#flavors">Flavors</a>
+    <a href="#garnishes">Garnishes</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
 <main id="top">
-<section class="hero">
-  <div class="hero-photo"><img src="images/chilosa-hero-product.jpg" alt="Chilosa Garnish Co. products"></div>
-  <div class="hero-copy">
-    <p class="eyebrow">NEW MEXICO • SOUTHWEST • BOLD FLAVOR</p>
-    <h1>Chile with a little attitude.</h1>
-    <p>Bold green chile flavor for fruit, snacks, food, cocktails and everyday favorites.</p>
-    <div class="buttons"><a href="#flavors">Meet the Flavors</a><a class="outline" href="#contact">Contact Us</a></div>
-  </div>
-</section>
 
-<section class="chile-feature" aria-label="Fresh green chile">
-  <div class="chile-feature-image">
-    <img src="images/fresh-green-chiles.jpg" alt="Fresh green chile peppers">
-  </div>
-  <div class="chile-feature-copy">
-    <p class="eyebrow">FRESH • BOLD • SOUTHWEST</p>
-    <h2>Green chile with personality.</h2>
-    <p>Fresh chile energy meets a little Chilosa attitude. Bright, colorful and made to bring some fun to every bite and every sip.</p>
-  </div>
-</section>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-photo">
+      <img src="images/chilosa-hero-product.jpg" alt="Chilosa Garnish Co. products">
+    </div>
+    <div class="hero-copy">
+      <p class="eyebrow">NEW MEXICO • SOUTHWEST • BOLD FLAVOR</p>
+      <h1>Chile with a little attitude.</h1>
+      <p>Bold green chile flavor for fruit, snacks, food, cocktails and everyday favorites.</p>
+      <div class="buttons">
+        <a href="#flavors">Meet the Flavors</a>
+        <a class="outline" href="#contact">Contact Us</a>
+      </div>
+    </div>
+  </section>
 
-<section id="about"><p class="eyebrow">THE CHILOSA SPIRIT</p><h2>Southwest flavor. Modern attitude.</h2>
-<p>Chilosa Garnish Co. brings bold green chile, citrus and Southwest-inspired flavor to the rim, the plate and everything in between.</p></section>
+  <!-- PERSONALITY / MYSTERY SECTION -->
+  <section class="personality-section" id="personality" aria-label="Chilosa personality">
+    <div class="personality-overlay">
+      <div class="personality-content">
+        <p class="personality-kicker">A LITTLE MYSTERY. A LOT OF CHILOSA.</p>
 
-<section id="flavors"><div class="section-kicker"><p class="eyebrow">THE LINEUP</p></div><h2>Pick your attitude.</h2>
-<div class="cards">
-<article><div class="photo product-image"><img src="images/mild-mama.jpg" alt="Chilosa Mild Mama product"></div><h3>Mild Mama</h3><p>Bright, savory green chile flavor with a balanced citrus finish.</p></article>
-<article><div class="photo product-image"><img src="images/hot-mama.jpg" alt="Chilosa Hot Mama product"></div><h3>Hot Mama</h3><p>Hot + extra-hot green chile for a bolder kick.</p></article>
-<article><div class="photo product-image"><img src="images/christmas-day.jpg" alt="Chilosa Christmas Day product"></div><h3>Christmas Day</h3><p>A Southwest holiday-inspired chile blend.</p></article>
-</div></section>
+        <h2>The grass isn't always greener,<br>but your Mexican Seasoning can be.</h2>
 
-<section id="garnishes" class="dark"><p class="eyebrow">MORE CHILOSA</p><h2>Made for the rim, the plate and everything in between.</h2></section>
+        <p class="personality-lead">
+          Some flavors announce themselves. Others leave clues.
+          Chilosa is the one you notice after the first sip.
+        </p>
 
-<section id="contact" class="contact"><div><p class="eyebrow">CONTACT</p><h2>Bring a little Chilosa home.</h2>
-<p>Follow Chilosa Garnish Co. for products, markets, recipes and new flavors.</p>
-<div class="social"><a href="https://www.instagram.com/chilosagarnish" target="_blank">Instagram @chilosagarnish</a>
-<a href="https://www.tiktok.com/@chilosagarnish" target="_blank">TikTok @chilosagarnish</a>
-<a href="https://www.facebook.com/ChilosaGarnish" target="_blank">Facebook: Chilosa Garnish</a></div></div></section>
+        <div class="personality-clues">
+          <div class="clue">
+            <span class="clue-mark">01</span>
+            <div>
+              <h3>Look for the clue.</h3>
+              <p>A rim. A slice. A little dust where you least expect it.</p>
+            </div>
+          </div>
+
+          <div class="clue">
+            <span class="clue-mark">02</span>
+            <div>
+              <h3>Follow the drop.</h3>
+              <p>One shake can change the whole drink. One bottle can change the mood.</p>
+            </div>
+          </div>
+
+          <div class="clue">
+            <span class="clue-mark">03</span>
+            <div>
+              <h3>Keep the secret.</h3>
+              <p>We make it easy to share the flavor without giving away the attitude.</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="personality-close">
+          For cocktails, fruit, snacks and whatever deserves a little more trouble.
+        </p>
+
+        <a class="personality-button" href="#flavors">Find Your Flavor</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <p class="eyebrow">THE CHILOSA SPIRIT</p>
+    <h2>Southwest flavor. Modern attitude.</h2>
+    <p>Chilosa Garnish Co. brings bold green chile, citrus and Southwest-inspired flavor to the rim, the plate and everything in between.</p>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="flavors">
+    <div class="section-kicker">
+      <p class="eyebrow">THE LINEUP</p>
+    </div>
+    <h2>Pick your attitude.</h2>
+
+    <div class="cards">
+      <article>
+        <div class="photo product-image">
+          <img src="images/mild-mama.jpg" alt="Chilosa Mild Mama product">
+        </div>
+        <h3>Mild Mama</h3>
+        <p>Bright, savory green chile flavor with a balanced citrus finish.</p>
+      </article>
+
+      <article>
+        <div class="photo product-image">
+          <img src="images/hot-mama.jpg" alt="Chilosa Hot Mama product">
+        </div>
+        <h3>Hot Mama</h3>
+        <p>Hot + extra-hot green chile for a bolder kick.</p>
+      </article>
+
+      <article>
+        <div class="photo product-image">
+          <img src="images/christmas-day.jpg" alt="Chilosa Christmas Day product">
+        </div>
+        <h3>Christmas Day</h3>
+        <p>A Southwest holiday-inspired chile blend.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- MORE CHILOSA -->
+  <section id="garnishes" class="dark">
+    <p class="eyebrow">MORE CHILOSA</p>
+    <h2>Made for the rim, the plate and everything in between.</h2>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div>
+      <p class="eyebrow">CONTACT</p>
+      <h2>Bring a little Chilosa home.</h2>
+      <p>Follow Chilosa Garnish Co. for products, markets, recipes and new flavors.</p>
+
+      <div class="social">
+        <a href="https://www.instagram.com/chilosagarnish" target="_blank" rel="noopener">Instagram @chilosagarnish</a>
+        <a href="https://www.tiktok.com/@chilosagarnish" target="_blank" rel="noopener">TikTok @chilosagarnish</a>
+        <a href="https://www.facebook.com/ChilosaGarnish" target="_blank" rel="noopener">Facebook: Chilosa Garnish</a>
+      </div>
+    </div>
+  </section>
+
 </main>
 
-<footer><img src="images/chilosa-logo-header.png" alt="Chilosa Garnish Co. logo"><span>© 2026 Chilosa Garnish Co.</span></footer>
-</body></html>
+<footer>
+  <img src="images/chilosa-logo-header.png" alt="Chilosa Garnish Co. logo">
+  <span>© 2026 Chilosa Garnish Co.</span>
+</footer>
+
+</body>
+</html>
