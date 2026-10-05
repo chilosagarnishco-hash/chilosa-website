@@ -208,16 +208,17 @@ p{
   border:2px solid var(--green);
 }
 
-/* PERSONALITY — LARGER IMAGE, LOWER WORDING */
+/* PERSONALITY — WIDE IMAGE WITH FULL HEAD / LOGO VISIBLE */
 .personality-section{
   position:relative;
   min-height:560px;
   height:560px;
+  width:100%;
   padding:0;
   overflow:hidden;
   isolation:isolate;
   color:#fff;
-  background:#151515 url("images/chilosa-personality-hero.png") center center / 100% auto no-repeat;
+  background:#151515 url("images/chilosa-personality-hero.png") center top / 100% auto no-repeat;
 }
 
 .personality-overlay{
@@ -228,10 +229,10 @@ p{
   background:
     linear-gradient(
       180deg,
-      rgba(8,16,8,.00) 0%,
-      rgba(8,16,8,.00) 48%,
-      rgba(8,16,8,.08) 61%,
-      rgba(8,16,8,.54) 79%,
+      rgba(8,16,8,0) 0%,
+      rgba(8,16,8,0) 50%,
+      rgba(8,16,8,.08) 62%,
+      rgba(8,16,8,.54) 80%,
       rgba(8,16,8,.84) 100%
     );
 }
@@ -239,7 +240,7 @@ p{
 .personality-content{
   position:relative;
   z-index:2;
-  width:min(1120px,94%);
+  width:min(1180px,94%);
   margin:0 auto;
   padding:18px 28px 20px;
   text-align:center;
@@ -253,17 +254,15 @@ p{
   font-size:clamp(1.9rem,3.8vw,3.55rem);
   line-height:1.02;
   letter-spacing:-.035em;
-  text-shadow:
-    0 2px 4px rgba(0,0,0,.95),
-    0 4px 18px rgba(0,0,0,.72);
+  text-shadow:0 2px 4px rgba(0,0,0,.95),0 4px 18px rgba(0,0,0,.72);
   background:rgba(8,16,8,.22);
   box-decoration-break:clone;
   -webkit-box-decoration-break:clone;
 }
 
 .personality-clues{
-  width:min(980px,100%);
-  margin:13px auto 13px;
+  width:min(1000px,100%);
+  margin:13px auto;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -278,9 +277,7 @@ p{
   font-size:.96rem;
   line-height:1.28;
   font-weight:800;
-  text-shadow:
-    0 2px 4px rgba(0,0,0,.98),
-    0 3px 12px rgba(0,0,0,.75);
+  text-shadow:0 2px 4px rgba(0,0,0,.98),0 3px 12px rgba(0,0,0,.75);
   background:rgba(8,16,8,.25);
   border-left:3px solid var(--red);
   backdrop-filter:blur(1.5px);
@@ -299,16 +296,14 @@ p{
   transition:.2s ease;
 }
 
-.personality-button:hover{
-  transform:translateY(-2px);
-}
+.personality-button:hover{transform:translateY(-2px);}
 
-/* Tablet */
 @media (max-width:900px){
   .personality-section{
     min-height:520px;
     height:520px;
-    background-size:100% auto;
+    background-size:auto 520px;
+    background-position:center top;
   }
 
   .personality-content{
@@ -317,12 +312,11 @@ p{
   }
 }
 
-/* Phone */
 @media (max-width:600px){
   .personality-section{
     min-height:500px;
     height:500px;
-    background-size:auto 100%;
+    background-size:auto 500px;
     background-position:center top;
   }
 
@@ -330,9 +324,9 @@ p{
     background:
       linear-gradient(
         180deg,
-        rgba(8,16,8,.00) 0%,
-        rgba(8,16,8,.02) 44%,
-        rgba(8,16,8,.12) 58%,
+        rgba(8,16,8,0) 0%,
+        rgba(8,16,8,.02) 42%,
+        rgba(8,16,8,.14) 57%,
         rgba(8,16,8,.66) 78%,
         rgba(8,16,8,.94) 100%
       );
@@ -370,15 +364,11 @@ p{
   .personality-section{
     min-height:480px;
     height:480px;
+    background-size:auto 480px;
   }
 
-  .personality-content h2{
-    font-size:1.65rem;
-  }
-
-  .personality-clues h3{
-    font-size:.84rem;
-  }
+  .personality-content h2{font-size:1.65rem;}
+  .personality-clues h3{font-size:.84rem;}
 }
 
 /* ABOUT */
